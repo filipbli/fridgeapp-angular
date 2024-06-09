@@ -1,0 +1,21 @@
+<div class="form-field">
+    <mat-form-field>
+        <mat-label>Nazwa produktu</mat-label>
+        <input type="text" matInput name="newGroceriesName" [(ngModel)]="newGroceriesName">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select 
+            name="newGroceriesType"
+            [(ngModel)]="newGroceriesType" 
+            placeholder="Typ produktu">
+            <mat-option *ngFor="let type of GroceriesTypes" [value]="type">
+                {{type}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Ilość</mat-label>
+        <input type="number" matInput name="newGroceriesQuantity" [(ngModel)]="newGroceriesQuantity">
+    </mat-form-field>
+    <button (click)="addGroceries()" mat-flat-button color="primary" class="form-button">Dodaj</button>
+</div>
