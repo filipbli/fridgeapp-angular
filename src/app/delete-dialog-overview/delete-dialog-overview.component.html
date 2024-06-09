@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Czy chcesz usunąc ten produkt?</h2>
+<mat-dialog-content>
+    <mat-list>
+        <mat-list-item>
+            <span>Nazwa: {{data.name}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span>Typ: {{data.type}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span>Ilość: {{data.quantity}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </mat-list>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-flat-button color="primary" (click)="onNoClick()">Nie</button>
+    <button mat-flat-button color="warn" (click)="onYesClick()">Tak</button>
+</mat-dialog-actions>

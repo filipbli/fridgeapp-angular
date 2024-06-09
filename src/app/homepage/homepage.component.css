@@ -1,0 +1,49 @@
+.mat-mdc-form-field{
+    background-color: var(--mat-table-background-color);
+    font-size: 14px;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+
+.mdc-data-table__table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.quantity-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.quantity-column span{
+    font-size: large;
+    align-self: center;
+}
+
+.quantity-column button{
+    transform: scale(1.2);
+}
+
+td, th{
+    font-size: medium;
+    padding: 5px;
+}
+
+.filteredData{
+    border: 1px solid black;
+    margin: 0px auto 10px auto;
+    padding: 0px;
+
+    height: 100px;
+    width: 95%;
+}
+
+.filteredData button{
+    transform: scale(0.9);
+    margin-bottom: 5px;
+}
+
+.filteredData span{
+    margin-bottom: 5px;
+}
